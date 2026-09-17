@@ -7,9 +7,50 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button id="rock">ROCK</button>
-    <button id="paper">PAPER</button>
-    <button id="scissor">SCISSORS</button>
+    <header id="header">
+      <h1>ROCK-PAPER-SCISSORS</h1>
+    </header>
+
+    <div class="container">
+      <div class="display">
+        <div class="human">
+          YOUR SCORE
+          <h3 id="hum">0</h3>
+        </div>
+        <div class="round">
+          ROUNDS
+          <h3 id="rou">0</h3>
+        </div>
+        <div class="computer">
+          COMPUTER SCORE
+          <h3 id="com">0</h3>
+        </div>
+      </div>
+
+      <div class="options">
+        <div class="your-choice">
+          you choose
+          <div class="choosen" id="humanChoiceDisplay">👍</div>
+        </div>
+
+        <div class="computer-choice">
+          computer choose
+          <div class="choosen" id="computerChoiceDisplay">👍</div>
+        </div>
+      </div>
+
+      <div class="show" id="result">Start the game!</div>
+      
+      <div class="console">
+        <button id="rock">✊</button>
+        <button id="paper">✋</button>
+        <button id="scissor">✌️</button>
+      </div>
+
+      <div class="reset">
+        <button id="reset">RESET</button>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

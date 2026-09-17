@@ -1,0 +1,107 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#header {
+    background-color: rgb(113, 210, 211);
+    font-size: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    border: 10px solid rgb(36, 36, 36);
+}
+.container {
+    background-color: rgb(36, 36, 36);
+    height: 85vh;
+    width: 100%;
+}
+
+.display {
+
+    font-size: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    width: 100%;
+    color: white;
+    padding: 20px;
+
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+
+.human, .computer,.round {
+    border: 5px solid  rgb(113, 210, 211);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.human,.computer {
+    margin-top: 150px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 22vh;
+    color: white;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.choosen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.show {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+
+.console {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+
+}
+button {
+    border: 5px solid rgb(113, 210, 211);
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    font-size: 90px;
+    background-color: rgb(36, 36, 36);
+}
+
+.reset {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.reset button {
+    width: 120px;
+    height: 50px;
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    color:  rgb(113, 210, 211);
+}
