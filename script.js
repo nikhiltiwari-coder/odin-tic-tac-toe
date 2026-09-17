@@ -50,19 +50,20 @@ let humanScore = 0;
 let computerScore = 0;
 let rounds = 0;
 
+//for seven rounds of the game
 function playRound(humanChoice, computerChoice) {
     if (rounds >= 7) {
     return;
 }
 
     rounds++;
-
+// Display the choices
     humanChoiceDisplay.textContent = getChoiceIcon(humanChoice);
     computerChoiceDisplay.textContent = getChoiceIcon(computerChoice);
 
     console.log("You choose: " + humanChoice);
     console.log("Computer chooses: " + computerChoice);
-
+// Determine the winner of the round
     if (humanChoice === computerChoice) {
         resultDisplay.textContent = "It's a Tie! 🤝";
     }
@@ -76,11 +77,11 @@ function playRound(humanChoice, computerChoice) {
         computerScore++;
         resultDisplay.textContent = "Computer Wins This Round! 💻";
     }
-
+// Update the score and round display
     humanScoreDisplay.textContent = humanScore;
     computerScoreDisplay.textContent = computerScore;
     roundDisplay.textContent = rounds;
-
+// Check if the game is over after 7 rounds
     if (rounds === 7) {
 
     if (humanScore > computerScore) {
@@ -98,7 +99,7 @@ function playRound(humanChoice, computerChoice) {
 }
 }
 
-
+// Add event listeners to the buttons for user input
 const rock = document.getElementById("rock");
 rock.addEventListener("click", () => {
     playRound("rock", getComputerChoice());
@@ -122,8 +123,10 @@ const roundDisplay = document.getElementById("rou");
 const humanChoiceDisplay = document.getElementById("humanChoiceDisplay");
 const computerChoiceDisplay = document.getElementById("computerChoiceDisplay");
 
+//
 const resultDisplay = document.getElementById("result");
 
+// Reset button functionality
 const resetButton = document.getElementById("reset");
 resetButton.addEventListener("click", () => {
 
